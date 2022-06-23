@@ -1,0 +1,24 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    <title>registration form</title>
+</head>
+<body>
+    
+    <div id="topic">
+        <h1>Registration Form</h1>
+    </div>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <p id="d" required>division_name {{form.name}}</p>
+        <input type="submit" value="save">
+    </form>
+    
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <script> -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script> 
+        $(document).ready(function(){
+            $("#hh").select2();
+        });
+    </script> 
+    <title>registration form</title>
+</head>
+<body>
+    
+    <div id="topic">
+        <h1>Registration Form</h1>
+    </div>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <p id="d">First_name {{form.first_name}}</p>
+        <p id="d">Last_name {{form.last_name}}</p>
+        <p id="d">Username {{form.username}}</p>
+        <p id="d">Email {{form.email}}</p>
+        <h3>choose division</h3>
+        <!-- <p id="d">cpd {{form.cpd}}    DEV {{form.DEV}}    ICPC {{form.ICPC}}</p> -->
+        <!-- <select id="hh" multiple style="width: 250px;">
+            <option>{{form.division}}</option>
+        </select> -->
+        <!-- {%for div in div%}
+            <input type="checkbox" name="division">{{div.name}}
+        {%endfor%} -->
+        <!-- <input type="checkbox">{{f.division}} -->
+        
+        {{form.division}}
+        <p id="d">Gender: female {{form.female}}    male {{form.male}}</p>
+        <p id="d">Year {{form.year}}</p>
+        <p id="d">password {{form.password1}}</p>
+        <p id="d">confirm_password {{form.password2}}</p>
+        
+        <input type="submit" value="register">
+        
+    </form>
+    
+</body>
+</html>

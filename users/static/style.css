@@ -1,0 +1,59 @@
+body{
+    position: absolute;
+    width: 1980px;
+    height: 1008px;
+    left: 0px;
+    top: 0px;
+
+    background: #C4C4C4;
+}
+/* input{
+    position: absolute;
+    width: 476px;
+    height: 48px;
+    left: 362px;
+    top: 205px;
+    background: #EDE0E0;
+
+}
+.topic{
+    position: absolute;
+    width: 321px;
+    height: 44px;
+    left: 838px;
+    top: 78px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    /* color: #1E1C1C;
+}
+.d{
+    position: absolute;
+    width: 61px;
+    height: 29px;
+    left: 561px;
+    top: 364px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    /* color: rgba(0, 0, 0, 0.65);
+}
+.f{
+    position: absolute;
+    width: 476px;
+    height: 48px;
+    left: 362px;
+    top: 205px;
+
+    background: #EDE0E0; */
+/* } */
